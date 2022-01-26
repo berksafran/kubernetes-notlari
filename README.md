@@ -10,7 +10,7 @@ Notlar içerisinde herhangi bir anlaşılmayan veya yanlış olan bir bilgi gör
 E-book GitHub Repository
 {% endembed %}
 
-Özgür Bey'e bu detaylı kursu hazırlarken harcadığı emeklerinden dolayı ve notları paylaşmamı kabul ettiği için, Ali Atalay Cebeci'ye katkılarından dolayı **** teşekkür ederim.&#x20;
+Özgür Bey'e bu detaylı kursu hazırlarken harcadığı emeklerinden dolayı ve notları paylaşmamı kabul ettiği için, Ali Atalay Cebeci'ye de katkılarından dolayı **** teşekkür ederim.&#x20;
 
 
 
