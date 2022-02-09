@@ -285,8 +285,8 @@ Uygulamamız içerisinde kullanılmak üzere her bir environment için (QA, SIT 
     **Eğer bir CI/CD üzerinde çalıştırıyor ve logları takip edeceksek;**
 
 ```shell
-# --dry-run normalde deprecated, fakat hali eski versionlarda kullanılıyor.
-kubectl create configmap hepsiortakconfig --from-file ${configFile} -o yaml --dry-run | kubectl apply -f -
+# --dry-run normalde deprecated, fakat hala eski versionlarda kullanılıyor.
+kubectl create configmap xyzconfig --from-file ${configFile} -o yaml --dry-run | kubectl apply -f -
 
 # yeni hali --dry-run="client"
 kubectl create configmap berkconfig --from-file config.json -o yaml --dry-run="client" | kubectl apply -f -
@@ -294,7 +294,7 @@ kubectl create configmap berkconfig --from-file config.json -o yaml --dry-run="c
 # Sondaki "-" (dash) çıkan pipe'ın ilk tarafından çıkan output'u alır.
 ```
 
-* Yukarıdaki komutu çalıştırdığımızda –> kubectl config.json dosyasını alır; bize `kubectl apply` komutunu kullanabileceğimiz bir ConfigMap YAML dosyası içeriğini oluşturur ve bu içeriği **`–dry-run`** seçeneğinden dolayı **output olarak ekrana basar.**
+* Yukarıdaki komutu çalıştırdığımızda kubectl config.json dosyasını alır; bize `kubectl apply` komutunu kullanabileceğimiz bir ConfigMap YAML dosyası içeriğini oluşturur ve bu içeriği **`–dry-run`** seçeneğinden dolayı **output olarak ekrana basar.**
 * Gelen output’u alıp (bash “pipe | ” ile) `kubectl apply` komutu ile cluster’ımıza gönderiyoruz ve ConfigMap tanıtımını yapıyoruz.
 
 **Eğer logları okumadan direkt config.json dosyasından bir ConfigMap yaratmak istiyorsak;**
