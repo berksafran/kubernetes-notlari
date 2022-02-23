@@ -25,7 +25,9 @@ spec:
 
 * “_Ben bu deployment’ta bir değişiklik yaparsam, öncelikle tüm podları sil, sonrasında yenilerini oluştur._” Bu yöntem daha çok **hardcore migration** yapıldığında kullanılır.
 
-ÖR: Uygulamamızın yeni versionuyla eski versionunun birlikte çalışması **sakıncalı** ise bu yöntem seçilir.
+Uygulamamızın yeni versionuyla eski versionunun birlikte çalışması **sakıncalı** ise bu yöntem seçilir. ****&#x20;
+
+**Örneğin,** bir RabbitMQ consumer'ımız olduğunu varsayalım. Böyle bir uygulamada eski version ve yeni version'un birlikte çalışması genellikle tercih edilen bir durum değildir. Bu sebeple, strategy olarak `recreate` tercih edilmelidir.
 
 ### Rollback Strategy - **`RollingUpdate`**
 
