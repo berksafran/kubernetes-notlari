@@ -62,9 +62,10 @@ Aşağıdaki, 4 component k8s yönetim kısmını oluşturur ve **master-node** 
 
 * **Master-node** -> Yönetim modullerinin çalıştığı yerdir.
 * **Worker-node** -> İş yükünün çalıştığı yerdir.
-* 
-![](<.gitbook/assets/Screen Shot 2022-07-19 at 12.17.04.png>)
-![](<.gitbook/assets/Screen Shot 2021-12-12 at 18.48.28.png>)
+
+
+
+![](<.gitbook/assets/Screen Shot 2022-07-19 at 12.17.04.png>) ![](<.gitbook/assets/Screen Shot 2021-12-12 at 18.48.28.png>)
 
 * **kube-apiserver** **(api) –>** K8s’in beyni, **ana haberleşme merkezi, giriş noktasıdır**. Bir nev-i **Gateway** diyebiliriz. Tüm **componentler** ve **node**’lar, **kube-apiserver** üzerinden iletişim kurar. Ayrıca, dış dünya ile platform arasındaki iletişimi de **kube-apiserver** sağlar. Bu denli herkesle iletişim kurabilen **tek componenttir**. **Authentication ve Authorization** görevini üstlenir.
 * **etcd** **->** K8s’in tüm cluster verisi, metada bilgileri ve Kubernetes platformunda oluşturulan componentlerin ve objelerin bilgileri burada tutulur. Bir nevi **Arşiv odası.** etcd, **key-value** şeklinde dataları tutar. Diğer componentler, etdc ile **direkt haberleşemezler.** Bu iletişimi, **kube-apiserver** aracılığıyla yaparlar.
